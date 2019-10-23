@@ -1,0 +1,663 @@
+{
+  "contractName": "HasNoTokens",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "from_",
+          "type": "address"
+        },
+        {
+          "name": "value_",
+          "type": "uint256"
+        },
+        {
+          "name": "data_",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokenFallback",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405260008054600160a060020a0319163317905561035c806100256000396000f3006080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166317ffc32081146100665780638da5cb5b14610089578063c0ee0b8a146100ba578063f2fde38b146100eb575b600080fd5b34801561007257600080fd5b50610087600160a060020a036004351661010c565b005b34801561009557600080fd5b5061009e6101d8565b60408051600160a060020a039092168252519081900360200190f35b3480156100c657600080fd5b5061008760048035600160a060020a0316906024803591604435918201910135610061565b3480156100f757600080fd5b50610087600160a060020a03600435166101e7565b60008054600160a060020a0316331461012457600080fd5b604080517f70a082310000000000000000000000000000000000000000000000000000000081523060048201529051600160a060020a038416916370a082319160248083019260209291908290030181600087803b15801561018557600080fd5b505af1158015610199573d6000803e3d6000fd5b505050506040513d60208110156101af57600080fd5b50516000549091506101d490600160a060020a0384811691168363ffffffff61027b16565b5050565b600054600160a060020a031681565b600054600160a060020a031633146101fe57600080fd5b600160a060020a038116151561021357600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b82600160a060020a031663a9059cbb83836040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083600160a060020a0316600160a060020a0316815260200182815260200192505050602060405180830381600087803b1580156102f757600080fd5b505af115801561030b573d6000803e3d6000fd5b505050506040513d602081101561032157600080fd5b5051151561032b57fe5b5050505600a165627a7a723058207ca715f2f66a45d275517ce47827be59708f26b6905f1508eee84221391ac1a70029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166317ffc32081146100665780638da5cb5b14610089578063c0ee0b8a146100ba578063f2fde38b146100eb575b600080fd5b34801561007257600080fd5b50610087600160a060020a036004351661010c565b005b34801561009557600080fd5b5061009e6101d8565b60408051600160a060020a039092168252519081900360200190f35b3480156100c657600080fd5b5061008760048035600160a060020a0316906024803591604435918201910135610061565b3480156100f757600080fd5b50610087600160a060020a03600435166101e7565b60008054600160a060020a0316331461012457600080fd5b604080517f70a082310000000000000000000000000000000000000000000000000000000081523060048201529051600160a060020a038416916370a082319160248083019260209291908290030181600087803b15801561018557600080fd5b505af1158015610199573d6000803e3d6000fd5b505050506040513d60208110156101af57600080fd5b50516000549091506101d490600160a060020a0384811691168363ffffffff61027b16565b5050565b600054600160a060020a031681565b600054600160a060020a031633146101fe57600080fd5b600160a060020a038116151561021357600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b82600160a060020a031663a9059cbb83836040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083600160a060020a0316600160a060020a0316815260200182815260200192505050602060405180830381600087803b1580156102f757600080fd5b505af115801561030b573d6000803e3d6000fd5b505050506040513d602081101561032157600080fd5b5051151561032b57fe5b5050505600a165627a7a723058207ca715f2f66a45d275517ce47827be59708f26b6905f1508eee84221391ac1a70029",
+  "sourceMap": "352:417:14:-;;;501:5:19;:18;;-1:-1:-1;;;;;;501:18:19;509:10;501:18;;;352:417:14;;;;;;",
+  "deployedSourceMap": "352:417:14:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;572:149:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;572:149:4;-1:-1:-1;;;;;572:149:4;;;;;;;238:20:19;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:19;;;;;;;;-1:-1:-1;;;;;238:20:19;;;;;;;;;;;;;;637:129:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;637:129:14;;;;-1:-1:-1;;;;;637:129:14;;;;;;;;;;;;;;;;832:169:19;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;832:169:19;-1:-1:-1;;;;;832:169:19;;;;;572:149:4;637:15;653:5:19;;-1:-1:-1;;;;;653:5:19;639:10;:19;631:28;;;;;;655:21:4;;;;;;671:4;655:21;;;;;;-1:-1:-1;;;;;655:15:4;;;;;:21;;;;;;;;;;;;;;-1:-1:-1;655:15:4;:21;;;5:2:-1;;;;30:1;27;20:12;5:2;655:21:4;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;655:21:4;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;655:21:4;701:5;;655:21;;-1:-1:-1;682:34:4;;-1:-1:-1;;;;;682:18:4;;;;701:5;655:21;682:34;:18;:34;:::i;:::-;572:149;;:::o;238:20:19:-;;;-1:-1:-1;;;;;238:20:19;;:::o;832:169::-;653:5;;-1:-1:-1;;;;;653:5:19;639:10;:19;631:28;;;;;;-1:-1:-1;;;;;908:22:19;;;;900:31;;;;;;958:5;;;937:37;;-1:-1:-1;;;;;937:37:19;;;;958:5;;;937:37;;;980:5;:16;;-1:-1:-1;;980:16:19;-1:-1:-1;;;;;980:16:19;;;;;;;;;;832:169::o;368:120:23:-;457:5;-1:-1:-1;;;;;457:14:23;;472:2;476:5;457:25;;;;;;;;;;;;;-1:-1:-1;;;;;457:25:23;-1:-1:-1;;;;;457:25:23;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;457:25:23;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;457:25:23;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;457:25:23;450:33;;;;;;368:120;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\nimport \"./CanReclaimToken.sol\";\n\n\n/**\n * @title Contracts that should not own Tokens\n * @author Remco Bloemen <remco@2π.com>\n * @dev This blocks incoming ERC223 tokens to prevent accidental loss of tokens.\n * Should tokens (any ERC20Basic compatible) end up in the contract, it allows the\n * owner to reclaim the tokens.\n */\ncontract HasNoTokens is CanReclaimToken {\n\n /**\n  * @dev Reject all ERC223 compatible tokens\n  * @param from_ address The address that is transferring the tokens\n  * @param value_ uint256 the amount of the specified token\n  * @param data_ Bytes The data passed from the caller.\n  */\n  function tokenFallback(address from_, uint256 value_, bytes data_) external {\n    from_;\n    value_;\n    data_;\n    revert();\n  }\n\n}\n",
+  "sourcePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoTokens.sol",
+  "ast": {
+    "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoTokens.sol",
+    "exportedSymbols": {
+      "HasNoTokens": [
+        3736
+      ]
+    },
+    "id": 3737,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3713,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:14"
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/CanReclaimToken.sol",
+        "file": "./CanReclaimToken.sol",
+        "id": 3714,
+        "nodeType": "ImportDirective",
+        "scope": 3737,
+        "sourceUnit": 3344,
+        "src": "26:31:14",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3715,
+              "name": "CanReclaimToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3343,
+              "src": "376:15:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CanReclaimToken_$3343",
+                "typeString": "contract CanReclaimToken"
+              }
+            },
+            "id": 3716,
+            "nodeType": "InheritanceSpecifier",
+            "src": "376:15:14"
+          }
+        ],
+        "contractDependencies": [
+          3343,
+          4178
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Contracts that should not own Tokens\n@author Remco Bloemen <remco@2π.com>\n@dev This blocks incoming ERC223 tokens to prevent accidental loss of tokens.\nShould tokens (any ERC20Basic compatible) end up in the contract, it allows the\nowner to reclaim the tokens.",
+        "fullyImplemented": true,
+        "id": 3736,
+        "linearizedBaseContracts": [
+          3736,
+          3343,
+          4178
+        ],
+        "name": "HasNoTokens",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3734,
+              "nodeType": "Block",
+              "src": "713:53:14",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3725,
+                    "name": "from_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3718,
+                    "src": "719:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 3726,
+                  "nodeType": "ExpressionStatement",
+                  "src": "719:5:14"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3727,
+                    "name": "value_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3720,
+                    "src": "730:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 3728,
+                  "nodeType": "ExpressionStatement",
+                  "src": "730:6:14"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3729,
+                    "name": "data_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3722,
+                    "src": "742:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_calldata_ptr",
+                      "typeString": "bytes calldata"
+                    }
+                  },
+                  "id": 3730,
+                  "nodeType": "ExpressionStatement",
+                  "src": "742:5:14"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3731,
+                      "name": "revert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        5936,
+                        5937
+                      ],
+                      "referencedDeclaration": 5936,
+                      "src": "753:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_revert_pure$__$returns$__$",
+                        "typeString": "function () pure"
+                      }
+                    },
+                    "id": 3732,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "753:8:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3733,
+                  "nodeType": "ExpressionStatement",
+                  "src": "753:8:14"
+                }
+              ]
+            },
+            "documentation": "@dev Reject all ERC223 compatible tokens\n@param from_ address The address that is transferring the tokens\n@param value_ uint256 the amount of the specified token\n@param data_ Bytes The data passed from the caller.",
+            "id": 3735,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "tokenFallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3723,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3718,
+                  "name": "from_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3735,
+                  "src": "660:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3720,
+                  "name": "value_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3735,
+                  "src": "675:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3719,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "675:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3722,
+                  "name": "data_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3735,
+                  "src": "691:11:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3721,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "691:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:44:14"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3724,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "713:0:14"
+            },
+            "scope": 3736,
+            "src": "637:129:14",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3737,
+        "src": "352:417:14"
+      }
+    ],
+    "src": "0:770:14"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoTokens.sol",
+    "exportedSymbols": {
+      "HasNoTokens": [
+        3736
+      ]
+    },
+    "id": 3737,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3713,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:14"
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/CanReclaimToken.sol",
+        "file": "./CanReclaimToken.sol",
+        "id": 3714,
+        "nodeType": "ImportDirective",
+        "scope": 3737,
+        "sourceUnit": 3344,
+        "src": "26:31:14",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3715,
+              "name": "CanReclaimToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3343,
+              "src": "376:15:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CanReclaimToken_$3343",
+                "typeString": "contract CanReclaimToken"
+              }
+            },
+            "id": 3716,
+            "nodeType": "InheritanceSpecifier",
+            "src": "376:15:14"
+          }
+        ],
+        "contractDependencies": [
+          3343,
+          4178
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Contracts that should not own Tokens\n@author Remco Bloemen <remco@2π.com>\n@dev This blocks incoming ERC223 tokens to prevent accidental loss of tokens.\nShould tokens (any ERC20Basic compatible) end up in the contract, it allows the\nowner to reclaim the tokens.",
+        "fullyImplemented": true,
+        "id": 3736,
+        "linearizedBaseContracts": [
+          3736,
+          3343,
+          4178
+        ],
+        "name": "HasNoTokens",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3734,
+              "nodeType": "Block",
+              "src": "713:53:14",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3725,
+                    "name": "from_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3718,
+                    "src": "719:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 3726,
+                  "nodeType": "ExpressionStatement",
+                  "src": "719:5:14"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3727,
+                    "name": "value_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3720,
+                    "src": "730:6:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 3728,
+                  "nodeType": "ExpressionStatement",
+                  "src": "730:6:14"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 3729,
+                    "name": "data_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3722,
+                    "src": "742:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_calldata_ptr",
+                      "typeString": "bytes calldata"
+                    }
+                  },
+                  "id": 3730,
+                  "nodeType": "ExpressionStatement",
+                  "src": "742:5:14"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 3731,
+                      "name": "revert",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        5936,
+                        5937
+                      ],
+                      "referencedDeclaration": 5936,
+                      "src": "753:6:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_revert_pure$__$returns$__$",
+                        "typeString": "function () pure"
+                      }
+                    },
+                    "id": 3732,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "753:8:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3733,
+                  "nodeType": "ExpressionStatement",
+                  "src": "753:8:14"
+                }
+              ]
+            },
+            "documentation": "@dev Reject all ERC223 compatible tokens\n@param from_ address The address that is transferring the tokens\n@param value_ uint256 the amount of the specified token\n@param data_ Bytes The data passed from the caller.",
+            "id": 3735,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "tokenFallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3723,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3718,
+                  "name": "from_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3735,
+                  "src": "660:13:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3717,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3720,
+                  "name": "value_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3735,
+                  "src": "675:14:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3719,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "675:7:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3722,
+                  "name": "data_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3735,
+                  "src": "691:11:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3721,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "691:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:44:14"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3724,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "713:0:14"
+            },
+            "scope": 3736,
+            "src": "637:129:14",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3737,
+        "src": "352:417:14"
+      }
+    ],
+    "src": "0:770:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-02-12T07:27:28.657Z"
+}

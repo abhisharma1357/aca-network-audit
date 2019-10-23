@@ -1,0 +1,405 @@
+{
+  "contractName": "NoOwner",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "contractAddr",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimContract",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "reclaimEther",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "from_",
+          "type": "address"
+        },
+        {
+          "name": "value_",
+          "type": "uint256"
+        },
+        {
+          "name": "data_",
+          "type": "bytes"
+        }
+      ],
+      "name": "tokenFallback",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x608060405260008054600160a060020a03191633179055341561002157600080fd5b61049c806100306000396000f3006080604052600436106100775763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166317ffc32081146100865780632aed7f3f146100a95780638da5cb5b146100ca5780639f727c27146100fb578063c0ee0b8a14610110578063f2fde38b14610141575b34801561008357600080fd5b50005b34801561009257600080fd5b506100a7600160a060020a0360043516610162565b005b3480156100b557600080fd5b506100a7600160a060020a036004351661022e565b3480156100d657600080fd5b506100df6102c8565b60408051600160a060020a039092168252519081900360200190f35b34801561010757600080fd5b506100a76102d7565b34801561011c57600080fd5b506100a760048035600160a060020a0316906024803591604435918201910135610322565b34801561014d57600080fd5b506100a7600160a060020a0360043516610327565b60008054600160a060020a0316331461017a57600080fd5b604080517f70a082310000000000000000000000000000000000000000000000000000000081523060048201529051600160a060020a038416916370a082319160248083019260209291908290030181600087803b1580156101db57600080fd5b505af11580156101ef573d6000803e3d6000fd5b505050506040513d602081101561020557600080fd5b505160005490915061022a90600160a060020a0384811691168363ffffffff6103bb16565b5050565b60008054600160a060020a0316331461024657600080fd5b5060008054604080517ff2fde38b000000000000000000000000000000000000000000000000000000008152600160a060020a039283166004820152905184939284169263f2fde38b926024808201939182900301818387803b1580156102ac57600080fd5b505af11580156102c0573d6000803e3d6000fd5b505050505050565b600054600160a060020a031681565b600054600160a060020a031633146102ee57600080fd5b60008054604051600160a060020a0390911691303180156108fc02929091818181858888f19350505050151561032057fe5b565b600080fd5b600054600160a060020a0316331461033e57600080fd5b600160a060020a038116151561035357600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b82600160a060020a031663a9059cbb83836040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083600160a060020a0316600160a060020a0316815260200182815260200192505050602060405180830381600087803b15801561043757600080fd5b505af115801561044b573d6000803e3d6000fd5b505050506040513d602081101561046157600080fd5b5051151561046b57fe5b5050505600a165627a7a72305820b0dbd8fe7c3465631fd1c5046da02f24d765dfe73f0e98f542c472101e718a1b0029",
+  "deployedBytecode": "0x6080604052600436106100775763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166317ffc32081146100865780632aed7f3f146100a95780638da5cb5b146100ca5780639f727c27146100fb578063c0ee0b8a14610110578063f2fde38b14610141575b34801561008357600080fd5b50005b34801561009257600080fd5b506100a7600160a060020a0360043516610162565b005b3480156100b557600080fd5b506100a7600160a060020a036004351661022e565b3480156100d657600080fd5b506100df6102c8565b60408051600160a060020a039092168252519081900360200190f35b34801561010757600080fd5b506100a76102d7565b34801561011c57600080fd5b506100a760048035600160a060020a0316906024803591604435918201910135610322565b34801561014d57600080fd5b506100a7600160a060020a0360043516610327565b60008054600160a060020a0316331461017a57600080fd5b604080517f70a082310000000000000000000000000000000000000000000000000000000081523060048201529051600160a060020a038416916370a082319160248083019260209291908290030181600087803b1580156101db57600080fd5b505af11580156101ef573d6000803e3d6000fd5b505050506040513d602081101561020557600080fd5b505160005490915061022a90600160a060020a0384811691168363ffffffff6103bb16565b5050565b60008054600160a060020a0316331461024657600080fd5b5060008054604080517ff2fde38b000000000000000000000000000000000000000000000000000000008152600160a060020a039283166004820152905184939284169263f2fde38b926024808201939182900301818387803b1580156102ac57600080fd5b505af11580156102c0573d6000803e3d6000fd5b505050505050565b600054600160a060020a031681565b600054600160a060020a031633146102ee57600080fd5b60008054604051600160a060020a0390911691303180156108fc02929091818181858888f19350505050151561032057fe5b565b600080fd5b600054600160a060020a0316331461033e57600080fd5b600160a060020a038116151561035357600080fd5b60008054604051600160a060020a03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b82600160a060020a031663a9059cbb83836040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083600160a060020a0316600160a060020a0316815260200182815260200192505050602060405180830381600087803b15801561043757600080fd5b505af115801561044b573d6000803e3d6000fd5b505050506040513d602081101561046157600080fd5b5051151561046b57fe5b5050505600a165627a7a72305820b0dbd8fe7c3465631fd1c5046da02f24d765dfe73f0e98f542c472101e718a1b0029",
+  "sourceMap": "389:63:18:-;;;501:5:19;:18;;-1:-1:-1;;;;;;501:18:19;509:10;501:18;;;970:9:13;:14;962:23;;;;;;389:63:18;;;;;;",
+  "deployedSourceMap": "389:63:18:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;389:63:18;;572:149:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;572:149:4;-1:-1:-1;;;;;572:149:4;;;;;;;481:164:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;481:164:12;-1:-1:-1;;;;;481:164:12;;;;;238:20:19;;8:9:-1;5:2;;;30:1;27;20:12;5:2;238:20:19;;;;;;;;-1:-1:-1;;;;;238:20:19;;;;;;;;;;;;;;1202:86:13;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1202:86:13;;;;637:129:14;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;637:129:14;;;;-1:-1:-1;;;;;637:129:14;;;;;;;;;;;;;;;;832:169:19;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;832:169:19;-1:-1:-1;;;;;832:169:19;;;;;572:149:4;637:15;653:5:19;;-1:-1:-1;;;;;653:5:19;639:10;:19;631:28;;;;;;655:21:4;;;;;;671:4;655:21;;;;;;-1:-1:-1;;;;;655:15:4;;;;;:21;;;;;;;;;;;;;;-1:-1:-1;655:15:4;:21;;;5:2:-1;;;;30:1;27;20:12;5:2;655:21:4;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;655:21:4;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;655:21:4;701:5;;655:21;;-1:-1:-1;682:34:4;;-1:-1:-1;;;;;682:18:4;;;;701:5;655:21;682:34;:18;:34;:::i;:::-;572:149;;:::o;481:164:12:-;553:20;653:5:19;;-1:-1:-1;;;;;653:5:19;639:10;:19;631:28;;;;;;-1:-1:-1;634:5:12;;;603:37;;;;;;-1:-1:-1;;;;;634:5:12;;;603:37;;;;;;584:12;;603:30;;;;;;:37;;;;;;;;;;;634:5;603:30;:37;;;5:2:-1;;;;30:1;27;20:12;5:2;603:37:12;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;603:37:12;;;;481:164;;:::o;238:20:19:-;;;-1:-1:-1;;;;;238:20:19;;:::o;1202:86:13:-;653:5:19;;-1:-1:-1;;;;;653:5:19;639:10;:19;631:28;;;;;;1258:5:13;;;:24;;-1:-1:-1;;;;;1258:5:13;;;;1269:4;:12;1258:24;;;;;1269:12;;1258:24;:5;:24;1269:12;1258:5;:24;;;;;;;1251:32;;;;;;1202:86::o;637:129:14:-;753:8;;;832:169:19;653:5;;-1:-1:-1;;;;;653:5:19;639:10;:19;631:28;;;;;;-1:-1:-1;;;;;908:22:19;;;;900:31;;;;;;958:5;;;937:37;;-1:-1:-1;;;;;937:37:19;;;;958:5;;;937:37;;;980:5;:16;;-1:-1:-1;;980:16:19;-1:-1:-1;;;;;980:16:19;;;;;;;;;;832:169::o;368:120:23:-;457:5;-1:-1:-1;;;;;457:14:23;;472:2;476:5;457:25;;;;;;;;;;;;;-1:-1:-1;;;;;457:25:23;-1:-1:-1;;;;;457:25:23;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;457:25:23;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;457:25:23;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;457:25:23;450:33;;;;;;368:120;;;:::o",
+  "source": "pragma solidity ^0.4.18;\n\nimport \"./HasNoEther.sol\";\nimport \"./HasNoTokens.sol\";\nimport \"./HasNoContracts.sol\";\n\n\n/**\n * @title Base contract for contracts that should not own things.\n * @author Remco Bloemen <remco@2π.com>\n * @dev Solves a class of errors where a contract accidentally becomes owner of Ether, Tokens or\n * Owned contracts. See respective base contracts for details.\n */\ncontract NoOwner is HasNoEther, HasNoTokens, HasNoContracts {\n}\n",
+  "sourcePath": "/home/abhi_21094/Projects/aca-audit/contracts/NoOwner.sol",
+  "ast": {
+    "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/NoOwner.sol",
+    "exportedSymbols": {
+      "NoOwner": [
+        4122
+      ]
+    },
+    "id": 4123,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4112,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:18"
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoEther.sol",
+        "file": "./HasNoEther.sol",
+        "id": 4113,
+        "nodeType": "ImportDirective",
+        "scope": 4123,
+        "sourceUnit": 3712,
+        "src": "26:26:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoTokens.sol",
+        "file": "./HasNoTokens.sol",
+        "id": 4114,
+        "nodeType": "ImportDirective",
+        "scope": 4123,
+        "sourceUnit": 3737,
+        "src": "53:27:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoContracts.sol",
+        "file": "./HasNoContracts.sol",
+        "id": 4115,
+        "nodeType": "ImportDirective",
+        "scope": 4123,
+        "sourceUnit": 3677,
+        "src": "81:30:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4116,
+              "name": "HasNoEther",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3711,
+              "src": "409:10:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoEther_$3711",
+                "typeString": "contract HasNoEther"
+              }
+            },
+            "id": 4117,
+            "nodeType": "InheritanceSpecifier",
+            "src": "409:10:18"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4118,
+              "name": "HasNoTokens",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3736,
+              "src": "421:11:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoTokens_$3736",
+                "typeString": "contract HasNoTokens"
+              }
+            },
+            "id": 4119,
+            "nodeType": "InheritanceSpecifier",
+            "src": "421:11:18"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4120,
+              "name": "HasNoContracts",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3676,
+              "src": "434:14:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoContracts_$3676",
+                "typeString": "contract HasNoContracts"
+              }
+            },
+            "id": 4121,
+            "nodeType": "InheritanceSpecifier",
+            "src": "434:14:18"
+          }
+        ],
+        "contractDependencies": [
+          3343,
+          3676,
+          3711,
+          3736,
+          4178
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Base contract for contracts that should not own things.\n@author Remco Bloemen <remco@2π.com>\n@dev Solves a class of errors where a contract accidentally becomes owner of Ether, Tokens or\nOwned contracts. See respective base contracts for details.",
+        "fullyImplemented": true,
+        "id": 4122,
+        "linearizedBaseContracts": [
+          4122,
+          3676,
+          3736,
+          3343,
+          3711,
+          4178
+        ],
+        "name": "NoOwner",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 4123,
+        "src": "389:63:18"
+      }
+    ],
+    "src": "0:453:18"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/NoOwner.sol",
+    "exportedSymbols": {
+      "NoOwner": [
+        4122
+      ]
+    },
+    "id": 4123,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4112,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:18"
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoEther.sol",
+        "file": "./HasNoEther.sol",
+        "id": 4113,
+        "nodeType": "ImportDirective",
+        "scope": 4123,
+        "sourceUnit": 3712,
+        "src": "26:26:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoTokens.sol",
+        "file": "./HasNoTokens.sol",
+        "id": 4114,
+        "nodeType": "ImportDirective",
+        "scope": 4123,
+        "sourceUnit": 3737,
+        "src": "53:27:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/abhi_21094/Projects/aca-audit/contracts/HasNoContracts.sol",
+        "file": "./HasNoContracts.sol",
+        "id": 4115,
+        "nodeType": "ImportDirective",
+        "scope": 4123,
+        "sourceUnit": 3677,
+        "src": "81:30:18",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4116,
+              "name": "HasNoEther",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3711,
+              "src": "409:10:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoEther_$3711",
+                "typeString": "contract HasNoEther"
+              }
+            },
+            "id": 4117,
+            "nodeType": "InheritanceSpecifier",
+            "src": "409:10:18"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4118,
+              "name": "HasNoTokens",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3736,
+              "src": "421:11:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoTokens_$3736",
+                "typeString": "contract HasNoTokens"
+              }
+            },
+            "id": 4119,
+            "nodeType": "InheritanceSpecifier",
+            "src": "421:11:18"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 4120,
+              "name": "HasNoContracts",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3676,
+              "src": "434:14:18",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_HasNoContracts_$3676",
+                "typeString": "contract HasNoContracts"
+              }
+            },
+            "id": 4121,
+            "nodeType": "InheritanceSpecifier",
+            "src": "434:14:18"
+          }
+        ],
+        "contractDependencies": [
+          3343,
+          3676,
+          3711,
+          3736,
+          4178
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Base contract for contracts that should not own things.\n@author Remco Bloemen <remco@2π.com>\n@dev Solves a class of errors where a contract accidentally becomes owner of Ether, Tokens or\nOwned contracts. See respective base contracts for details.",
+        "fullyImplemented": true,
+        "id": 4122,
+        "linearizedBaseContracts": [
+          4122,
+          3676,
+          3736,
+          3343,
+          3711,
+          4178
+        ],
+        "name": "NoOwner",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 4123,
+        "src": "389:63:18"
+      }
+    ],
+    "src": "0:453:18"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-02-12T07:27:28.661Z"
+}
